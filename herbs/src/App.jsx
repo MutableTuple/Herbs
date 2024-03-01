@@ -20,6 +20,9 @@ import AboutUs from "./components/Pages/AboutusPage/AboutUs.component";
 import Checkout from "./components/Pages/Checkout/Checkout.component";
 import Register from "./components/Pages/Register/Register.component";
 import Overview from "./components/Pages/OverviewPage/Overview.component";
+import Orders from "./components/Pages/OrdersPage/Orders.component";
+import BillingPage from "./components/Pages/BillingPage/BillingPage.component";
+import Settings from "./components/Pages/Settings/Settings.component";
 //
 
 const App = () => {
@@ -76,6 +79,9 @@ const App = () => {
           <Route path="checkout" element={<Checkout />} />
           <Route path="register" element={<Register />} />
           <Route path="account" element={<Overview />} />
+          <Route path="orders" element={<Orders />} />
+          <Route path="billing" element={<BillingPage />} />
+          <Route path="settings" element={<Settings />} />
 
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>

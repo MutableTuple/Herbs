@@ -164,8 +164,6 @@ const OrdersSection = () => {
               </div>
             </div>
           </div>
-
-          {/* Add more orders here as needed */}
         </div>
       </div>
     </section>
