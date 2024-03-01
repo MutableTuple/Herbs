@@ -15,10 +15,10 @@ const Hero = () => {
       <div
         className="position-absolute w-100 h-100 top-0 start-0 bg-size-cover bg-position-center mt-4"
         style={{
-          backgroundImage: "url(./src/assets/img/landing/shop-2/hero-cta.jpg)",
+          backgroundImage: "url(./src/assets/img/bg/bg.png)",
         }}
       ></div>
-      <div className="container position-relative z-2 text-center pt-2 pt-sm-4 pt-lg-5">
+      {/* <div className="container position-relative z-2 text-center pt-2 pt-sm-4 pt-lg-5">
         <h1 className="display-1 text-white pt-5 mt-3">
           All you need is
           <span className="d-inline-flex align-items-center">
@@ -42,7 +42,7 @@ const Hero = () => {
         <a className="btn btn-light rounded-pill" href="#">
           Go to Shop
         </a>
-      </div>
+      </div> */}
       <div className="d-none d-lg-block" style={{ height: 360 + "px" }}></div>
       <div
         className="d-none d-md-block d-lg-none"

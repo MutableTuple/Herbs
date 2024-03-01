@@ -4,11 +4,11 @@ function PriceSlider() {
   return (
     <div
       className="range-slider pb-3 mb-4"
-      data-start-min={10}
-      data-start-max={50}
-      data-min={0}
-      data-max={80}
-      data-step={1}
+      data-start-min="10"
+      data-start-max="50"
+      data-min="0"
+      data-max="80"
+      data-step="1"
       data-tooltip-prefix="$"
     >
       <div className="range-slider-ui noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
@@ -25,13 +25,13 @@ function PriceSlider() {
           >
             <div
               className="noUi-handle noUi-handle-lower"
-              data-handle={0}
-              tabIndex={0}
+              data-handle="0"
+              tabIndex="0"
               role="slider"
               aria-orientation="horizontal"
-              aria-valuemin={0.0}
-              aria-valuemax={50.0}
-              aria-valuenow={10.0}
+              aria-valuemin="0.0"
+              aria-valuemax="50.0"
+              aria-valuenow="10.0"
               aria-valuetext="$10"
             >
               <div className="noUi-touch-area"></div>
@@ -44,16 +44,13 @@ function PriceSlider() {
           >
             <div
               className="noUi-handle noUi-handle-upper"
-              data-handle={1}
-              tabIndex={0}
+              data-handle="1"
+              tabIndex="0"
               role="slider"
-              onChange={(e) => {
-                e.target.value;
-              }}
               aria-orientation="horizontal"
-              aria-valuemin={10.0}
-              aria-valuemax={80.0}
-              aria-valuenow={50.0}
+              aria-valuemin="10.0"
+              aria-valuemax="80.0"
+              aria-valuenow="50.0"
               aria-valuetext="$50"
             >
               <div className="noUi-touch-area"></div>

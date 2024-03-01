@@ -11,7 +11,7 @@ const Cart = () => {
     >
       {/* Title */}
       <div className="px-4 pt-3">
-        <div className="d-flex justify-content-between align-items-center border-bottom pb-3 pb-sm-4">
+        {/* <div className="d-flex justify-content-between align-items-center border-bottom pb-3 pb-sm-4">
           <h2 className="offcanvas-title d-flex align-items-center mb-1">
             <svg
               className="text-body-secondary fs-1 me-3"
@@ -32,11 +32,11 @@ const Cart = () => {
             data-bs-target="#cartOffcanvas"
             aria-label="Close"
           ></button>
-        </div>
+        </div> */}
       </div>
 
       {/* Body */}
-      <div className="offcanvas-body">
+      {/* <div className="offcanvas-body">
         <p className="mb-4">
           Is your shopping cart feeling a little lonely? Don't let it sit there
           empty and forgotten. It's time to fill it up with your favorite
@@ -49,7 +49,7 @@ const Cart = () => {
         >
           Start shopping
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

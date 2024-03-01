@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import Navbar from "./components/Navbar/Navbar.component";
 import Hero from "./components/Hero/Hero.component";
 import NewArrivals from "./components/NewArrivals/NewArrivals.component";
@@ -17,8 +18,50 @@ import Contact from "./components/Pages/ContactPage/Contact.component";
 import SignIn from "./components/Pages/SignIn/SignIn.component";
 import AboutUs from "./components/Pages/AboutusPage/AboutUs.component";
 import Checkout from "./components/Pages/Checkout/Checkout.component";
+import Register from "./components/Pages/Register/Register.component";
+import Overview from "./components/Pages/OverviewPage/Overview.component";
 //
+
 const App = () => {
+  // useEffect(() => {
+  //   const loadScripts = async () => {
+  //     // Load external scripts dynamically
+  //     const scriptUrls = [
+  //       "./src/assets/js/theme-switcher.js",
+  //       "./src/assets/vendor/parallax-js/dist/parallax.min.js",
+  //       "./src/assets/vendor/aos/dist/aos.js",
+  //       "./src/assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js",
+  //       "./src/assets/vendor/img-comparison-slider/dist/index.js",
+  //       // Add more script URLs here as needed
+  //     ];
+
+  //     // Load each script
+  //     await Promise.all(
+  //       scriptUrls.map((url) => {
+  //         return new Promise((resolve, reject) => {
+  //           const script = document.createElement("script");
+  //           script.src = url;
+  //           script.async = true;
+  //           script.onload = resolve;
+  //           script.onerror = reject;
+  //           document.body.appendChild(script);
+  //         });
+  //       })
+  //     );
+  //   };
+
+  //   // Call the function to load scripts
+  //   loadScripts();
+
+  //   // Cleanup function (optional)
+  //   return () => {
+  //     // Remove the dynamically added scripts when the component unmounts
+  //     const scripts = document.querySelectorAll('script[data-loaded="true"]');
+  //     scripts.forEach((script) => {
+  //       document.body.removeChild(script);
+  //     });
+  //   };
+  // }, []);
   return (
     <div className="app">
       <BrowserRouter>
@@ -31,6 +74,8 @@ const App = () => {
           <Route path="signin" element={<SignIn />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="checkout" element={<Checkout />} />
+          <Route path="register" element={<Register />} />
+          <Route path="account" element={<Overview />} />
 
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>

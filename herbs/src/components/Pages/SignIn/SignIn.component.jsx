@@ -1,19 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Register from "../Register/Register.component";
 
 const SignIn = () => {
   return (
     <div className="d-lg-flex position-relative h-100">
       {/* Home button */}
-      <a
+      <Link
         className="text-nav btn btn-icon bg-light border rounded-circle position-absolute top-0 end-0 p-0 mt-3 me-3 mt-sm-4 me-sm-4"
-        href="index.html"
+        to={"/"}
         data-bs-toggle="tooltip"
         data-bs-placement="left"
         aria-label="Back to home"
         data-bs-original-title="Back to home"
       >
         <i className="ai-home"></i>
-      </a>
+      </Link>
 
       {/* Sign in form */}
       <div className="d-flex flex-column align-items-center w-lg-50 h-100 px-3 px-lg-5 pt-5">
@@ -21,7 +23,7 @@ const SignIn = () => {
           <h1>Sign in to Around</h1>
           <p className="pb-3 mb-3 mb-lg-4">
             Don't have an account yet?&nbsp;&nbsp;
-            <a href="account-signup.html">Register here!</a>
+            <Link to={"/register"}>Register here!</Link>
           </p>
           <form className="needs-validation" noValidate="">
             <div className="pb-3 mb-3">

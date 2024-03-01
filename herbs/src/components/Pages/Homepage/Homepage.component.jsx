@@ -19,8 +19,8 @@ const Homepage = () => {
       <NewArrivals />
       <AboutUs />
       <OurClients />
-      <Collection />
-      <Specialities />
+      {/* <Collection /> */}
+      {/* <Specialities /> */}
       <MostPopular />
       <Social />
       <Footer />

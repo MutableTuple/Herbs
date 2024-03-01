@@ -12,7 +12,7 @@ const MostPopular = () => {
             className="h-100 bg-size-cover bg-position-center rounded-5 me-md-4 me-xl-5"
             style={{
               backgroundImage:
-                "url(./src/assets/img/landing/shop-2/popular/preview.jpg)",
+                "url(./src/assets/img/product/productinfo/9.png)",
             }}
           >
             <div className="ratio ratio-16x9"></div>
@@ -20,15 +20,18 @@ const MostPopular = () => {
         </div>
         <div className="col-md-7 col-lg-6 py-md-4">
           <div className="py-xl-2">
-            <h3>La Vie En Rose</h3>
+            <h3>Ontvang bij elke aankoop een certificaat.</h3>
             <p>
-              These iconic French inspired flavours will delight your senses!
+              Bij Mendu Herbs ontvang je bij elke aankoop een certificaat. Dit
+              certificaat staat garant voor authenticiteit en bevestigt de
+              kwaliteit en integriteit van onze producten. Met elke transactie
+              krijgen klanten gemoedsrust, wetende dat ze investeren in echte,
+              hoogwaardige kruidenoplossingen van Mendu Herbs
               <br />
-              Assorted box of 15 macarons composed of:
             </p>
             <div className="row row-cols-1 row-cols-sm-2 mb-4">
               <ul className="col d-flex flex-column list-unstyled m-0 gap-2 mb-2 mb-sm-0">
-                <li className="d-flex align-items-center gap-2">
+                {/* <li className="d-flex align-items-center gap-2">
                   3
                   <div className="text-nowrap">
                     <img
@@ -48,10 +51,10 @@ const MostPopular = () => {
                     />
                   </div>
                   Salted caramel
-                </li>
+                </li> */}
               </ul>
             </div>
-            <p className="mb-2">Contains allergens:</p>
+            {/* <p className="mb-2">Contains allergens:</p>
             <div className="d-flex gap-4 mb-4">
               <div>
                 <svg
@@ -66,9 +69,9 @@ const MostPopular = () => {
                 </svg>
                 <span className="fs-sm text-center">Milk</span>
               </div>
-            </div>
+            </div> */}
             <a className="btn btn-dark rounded-pill" href="#">
-              Order now
+              Nu bestellen
             </a>
           </div>
         </div>

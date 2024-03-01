@@ -22,9 +22,10 @@ const Contact = () => {
         <div className="row pb-1 pb-sm-3 pb-lg-4">
           <div className="col-lg-4 pe-xxl-4">
             {/* Page title */}
-            <h1 className="display-2">Contacts</h1>
+            <h1 className="display-5">Contactgegevens</h1>
             <p className="fs-lg pb-4 mb-0 mb-sm-2">
-              Get in touch with us by completing the below form or call us now
+              Neem contact met ons op door het onderstaande formulier in te
+              vullen of bel ons nu.
             </p>
           </div>
           <div className="col-lg-8 col-xl-7 offset-xl-1">

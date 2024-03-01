@@ -5,7 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Webmanifest + Favicon / App icons -->
-    <script src="./src/assets/js/theme-switcher.js"></script>
     <link rel="manifest" href="/manifest.json" />
     <link
       rel="icon"
@@ -17,8 +16,9 @@
       rel="apple-touch-icon"
       href="./src/assets/app-icons/icon-180x180.png"
     />
-    <script src="./src/assets/js/theme-switcher.js"></script>
 
+   <!-- Theme switcher (color modes) -->
+   <script src="./src/assets/js/theme-switcher.js"></script>
     <!-- Import Google font (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -115,6 +115,7 @@
             data-bs-dismiss="offcanvas"
             data-bs-target="#cartOffcanvas"
             aria-label="Close"
+            onclick=(closeCart())
           ></button>
         </div>
       </div>
@@ -140,22 +141,24 @@
       </svg>
       <i class="ai-arrow-up"></i>
     </a>
-    
+
   </main>
 
-    <div id="root"></div>
+    <div id="root">
+
+
+    </div>
     <script type="module" src="./src/main.jsx"></script>
     <!-- Theme switcher (color modes) -->
 
         <!-- Vendor scripts: JS libraries and plugins -->
-        <script src="./src/assets/vendor/parallax-js/dist/parallax.min.js"></script>
+        <!-- <script src="./src/assets/vendor/parallax-js/dist/parallax.min.js" ></script>
         <script src="./src/assets/vendor/aos/dist/aos.js"></script>
         <script src="./src/assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
-        <script src="./src/assets/vendor/img-comparison-slider/dist/index.js"></script>
+        <script src="./src/assets/vendor/img-comparison-slider/dist/index.js"></script> -->
     
         <!-- Bootstrap + Theme scripts -->
-        <script src="assets/js/theme.min.js"></script>
-    <script src="./src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="./src/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="./src/assets/vendor/shufflejs/dist/shuffle.min.js"></script>
     <script src="./src/assets/vendor/prismjs/components/prism-markup.min.js"></script>
     <script src="./src/assets/vendor/prismjs/components/prism-clike.min.js"></script>
@@ -165,7 +168,19 @@
     <script src="./src/assets/vendor/parallax-js/dist/parallax.min.js"></script>
     <script src="./src/assets/vendor/aos/dist/aos.js"></script>
     <script src="./src/assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
-    <script src="./src/assets/vendor/img-comparison-slider/dist/index.js"></script>
+    <script src="./src/assets/vendor/img-comparison-slider/dist/index.js"></script> -->
+    <!-- Vendor scripts: JS libraries and plugins -->
+    <script src="./src/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="./src/assets/vendor/simplebar/dist/simplebar.min.js"></script>
+
+    <!-- Bootstrap + Theme scripts -->
     <script src="./src/assets/js/theme.min.js"></script>
+
+    <script>
+      function closeCart() {
+  const cartOffcanvas = document.getElementById("cartOffcanvas");
+  cartOffcanvas.classList.remove("show");
+}
+    </script>
   </body>
 </html>
