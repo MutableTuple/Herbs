@@ -2,6 +2,7 @@ import React from "react";
 import OverviewMain from "./OverviewMain.component";
 import Footer from "../../Footer/Footer.component";
 import Navbar from "../../Navbar/Navbar.component";
+import OrderSidebar from "../OrdersPage/OrderSidebar.component";
 const Overview = () => {
   return (
     <>

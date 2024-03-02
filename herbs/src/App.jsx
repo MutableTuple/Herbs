@@ -23,6 +23,11 @@ import Overview from "./components/Pages/OverviewPage/Overview.component";
 import Orders from "./components/Pages/OrdersPage/Orders.component";
 import BillingPage from "./components/Pages/BillingPage/BillingPage.component";
 import Settings from "./components/Pages/Settings/Settings.component";
+import Favourites from "./components/Pages/Favourites/Favourites.component";
+import Faq from "./components/Pages/Faq/Faq.component";
+import Chat from "./components/Pages/Chat/Chat.component";
+import PrivacyPolicy from "./components/Pages/PrivacyPolicy/PrivacyPolicy.component";
+import Tnc from "./components/Pages/TNC/tnc.component";
 //
 
 const App = () => {
@@ -82,7 +87,13 @@ const App = () => {
           <Route path="orders" element={<Orders />} />
           <Route path="billing" element={<BillingPage />} />
           <Route path="settings" element={<Settings />} />
-
+          {/*  */}
+          <Route path="wishlist" element={<Favourites />} />
+          <Route path="chat" element={<Chat />} />
+          <Route path="faq" element={<Faq />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms" element={<Tnc />} />
+          {/* 494 */}
           <Route path="*" element={<PageNotFound />}></Route>
         </Routes>
       </BrowserRouter>
