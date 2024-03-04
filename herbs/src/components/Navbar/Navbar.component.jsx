@@ -28,55 +28,51 @@ const Navbar = () => {
               Mendu Herbs
             </span>
           </NavLink>
-          <div className="nav align-items-center order-lg-2 ms-auto">
-            <a
-              href="#"
-              className="nav-link fs-4 p-2 mx-sm-1"
+          <div
+            className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto"
+            data-bs-toggle="mode"
+          >
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="theme-mode"
+            />
+            <label className="form-check-label" htmlFor="theme-mode">
+              <i className="ai-sun fs-lg"></i>
+            </label>
+            <label className="form-check-label" htmlFor="theme-mode">
+              <i className="ai-moon fs-lg"></i>
+            </label>
+          </div>
+
+          <div className="nav align-items-center order-lg-3 ms-n1 me-3 me-sm-0">
+            <NavLink
+              className="nav-link fs-4 p-2 mx-sm-1 d-none d-sm-flex"
+              to={"/signin"}
               aria-label="Account"
             >
-              <NavLink className="ai-user" to={"/signin"}></NavLink>
-            </a>
-            {/* CART BTN */}
-            {/* <a
-              href="#"
-              className="nav-link position-relative fs-4 p-2"
-              aria-label="Cart"
-            >
-              <i className="ai-cart"></i>
-              <span
-                className="badge bg-primary fs-xs position-absolute end-0 top-0 me-n1"
-                style={{ padding: ".25rem .375rem" }}
-              >
-                3
-              </span>
-            </a> */}
+              <i className="ai-user"></i>
+            </NavLink>
             <a
-              href="#"
               className="nav-link position-relative fs-4 p-2"
-              aria-label="Cart"
-              onClick={toggleCart}
+              href="#cartOffcanvas"
+              data-bs-toggle="offcanvas"
+              aria-label="Shopping cart"
             >
               <i className="ai-cart"></i>
-              <span
-                className="badge bg-primary fs-xs position-absolute end-0 top-0 me-n1"
-                style={{ padding: ".25rem .375rem" }}
-              >
-                0
-              </span>
             </a>
-
-            {/*  */}
-            <button
-              type="button"
-              className="navbar-toggler ms-3"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarCollapse3"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
           </div>
-          <nav className="collapse navbar-collapse" id="navbarCollapse3">
+          <button
+            className="navbar-toggler ms-sm-3 collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <nav className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <NavLink to={"/"} className={"nav-link"}>
@@ -99,7 +95,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul>
-            <div
+            {/* <div
               className="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto"
               data-bs-toggle="mode"
             >
@@ -114,7 +110,7 @@ const Navbar = () => {
               <label className="form-check-label" for="theme-mode">
                 <i className="ai-moon fs-lg"></i>
               </label>
-            </div>
+            </div> */}
           </nav>
         </div>
       </header>

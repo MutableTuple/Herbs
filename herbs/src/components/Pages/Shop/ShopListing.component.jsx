@@ -20,6 +20,15 @@ const ShopListing = () => {
           </div>
           <ShopMain />
         </div>
+        <button
+          class="d-lg-none btn btn-sm fs-sm btn-primary w-100 rounded-0 fixed-bottom"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#shopSidebar"
+        >
+          <i class="ai-filter me-2"></i>
+          Filters
+        </button>
       </div>
       <Footer />
       {/* <FooterSub /> */}
