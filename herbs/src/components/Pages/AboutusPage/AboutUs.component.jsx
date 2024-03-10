@@ -7,6 +7,7 @@ import KeyToSuccess from "./KeyToSuccess.component";
 import Clients from "./Clients.component";
 import Services from "./Services.component";
 import Footer from "../../Footer/Footer.component";
+import Team from "./Team.component";
 const AboutUs = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const AboutUs = () => {
       <ImageSection />
       <Approach />
       <KeyToSuccess />
+      <Team />
       <Clients />
       <Services />
       <Footer />
